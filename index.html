@@ -705,7 +705,7 @@
     } catch(e){}
   }
 
-  var VARIANT = 'B'; // link fixo da Versão B — sem sorteio, sempre mostra QUESTIONS_B
+  var VARIANT = getVariant(); // sorteio aleatório 50/50, persistido no navegador da pessoa
   var QUESTIONS = (VARIANT === 'A') ? QUESTIONS_A : QUESTIONS_B;
   var TOTAL = QUESTIONS.length;
   var NAMES = {lula:"Lula", bolsonaro:"Bolsonaro"};
